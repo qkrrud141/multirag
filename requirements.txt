@@ -1,0 +1,45 @@
+# requirements.txt
+
+# ==============================
+# 1. LangChain 관련 라이브러리
+# ==============================
+
+langchain>=1.0                 # LLM 애플리케이션 개발을 위한 핵심 프레임워크
+langchain-classic>=1.0         # MultiVectorRetriever 등 기존 체인 및 검색 기능 제공 (필수)
+langchain-openai               # OpenAI GPT 및 임베딩 모델 API 연동
+langchain-community            # 외부 데이터 로더, 벡터 저장소 등 다양한 통합 기능 제공
+langchain-chroma               # LangChain과 ChromaDB를 연결하는 통합 패키지
+langchain-experimental         # SemanticChunker 등 실험적인 문서 처리 및 검색 기능
+langchain-ollama               # Ollama 기반 로컬 LLM 및 임베딩 모델 연동
+langchain-text-splitters       # 긴 문서를 검색하기 좋은 크기의 청크로 분할
+
+# ==============================
+# 2. 문서 파싱 및 레이아웃 분석
+# ==============================
+
+unstructured[all-docs]         # PDF, Word, PPT, 이미지 등 다양한 문서 파싱 및 구조화
+unstructured-inference         # AI 모델을 활용한 문서 레이아웃 분석 (제목, 표, 본문 등)
+
+# ==============================
+# 3. 이미지 및 데이터 처리
+# ==============================
+
+pillow                         # 이미지 열기, 크기 변경, 자르기 및 형식 변환
+pydantic                       # 데이터 스키마 정의 및 타입 검증
+lxml                           # XML 및 HTML 문서 파싱과 구조 분석
+matplotlib                     # 데이터 시각화 및 그래프 생성
+
+# ==============================
+# 4. 벡터 데이터베이스 및 토큰
+# ==============================
+
+chromadb                       # 문서 임베딩 벡터 저장 및 유사도 검색
+tiktoken                       # LLM 입력 텍스트의 토큰 수 계산
+
+# ==============================
+# 5. 환경변수 및 개발 환경
+# ==============================
+
+python-dotenv                  # .env 파일에서 API 키 및 환경변수 로드
+ipykernel                      # Jupyter Notebook에서 Python 코드 실행을 위한 커널
+jupyterlab                     # 브라우저 기반 Python 개발 및 노트북 실행 환경
